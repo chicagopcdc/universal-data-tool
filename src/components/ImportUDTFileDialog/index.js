@@ -37,7 +37,7 @@ const ImportUDTFileDialog = ({ open, onClose, onAddSamples }) => {
             changeError(null)
             let samples, taskOutput
             try {
-              ;[samples, taskOutput] = JSON.parse(content).samples
+              samples = JSON.parse(content).samples
             } catch (e1) {
               try {
                 const udt = fromUDTCSV(content)

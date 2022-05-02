@@ -44,3 +44,6 @@ cypress/screenshots
 .idea
 *.db
 .vercel
+
+.env
+tools/env
